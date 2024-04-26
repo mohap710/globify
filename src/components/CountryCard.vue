@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" @click="viewCountry(country)">
     <div class="card-media">
       <img :src="country.flag" :alt="country.name + ' flag'" />
     </div>
@@ -18,9 +18,18 @@
 </template>
 
 <script setup>
+  import { useRouter } from "vue-router";
+  const router = useRouter();
+
   defineProps({
     country: {},
   });
+  function viewCountry(country) {
+    router.push({
+      name: "country",
+      params: { name: country.name },
+    });
+  }
 </script>
 
 <style scoped>
