@@ -19,12 +19,17 @@
 
 <script setup>
   import { useRouter } from "vue-router";
+  import { useCountryStore } from "../stores/country";
+
+  let store = useCountryStore();
+
   const router = useRouter();
 
   defineProps({
     country: {},
   });
   function viewCountry(country) {
+    store.setCountry(country);
     router.push({
       name: "country",
       params: { name: country.name },
