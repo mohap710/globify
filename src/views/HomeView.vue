@@ -1,14 +1,14 @@
 <script setup>
   import { ref, watch, onMounted } from "vue";
   import CountryCard from "../components/CountryCard.vue";
-  import countriesData from "../../data.json";
+  import countriesData from "../stores/data.json";
   import Pagination from "../components/Pagination.vue";
   import DropDown from "../components/DropDown.vue";
-  let countries = ref(countriesData);
-  let keyword = ref("");
-  let start = ref(0);
-  let end = ref(12); // Limit per page
-  let selectedRegion = ref(null);
+  const countries = ref(countriesData);
+  const keyword = ref("");
+  const start = ref(0);
+  const end = ref(12); // Limit per page
+  const selectedRegion = ref(null);
 
   countries.value = countriesData.slice(start.value, end.value);
 
@@ -19,12 +19,12 @@
 
   function filterByRegion(region) {
     selectedRegion.value = region;
-    if (region == "Filter By Region") {
+    if (region === "Filter By Region") {
       return (countries.value = countriesData.slice(start.value, end.value));
     }
 
     countries.value = countriesData.filter((country) => {
-      return country.region == region;
+      return country.region === region;
     });
     countries.value = countries.value.slice(start.value, end.value);
   }
