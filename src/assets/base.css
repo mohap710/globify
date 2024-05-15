@@ -50,7 +50,26 @@ video {
   vertical-align: middle;
   transition: all ease-in-out 450ms;
 }
+strong {
+  font-weight: 800;
+}
 [disabled] {
   opacity: 0.8;
   cursor: not-allowed;
+}
+
+.btn {
+  padding: 0.6rem 1rem;
+  color: var(--color-text);
+  border: 1px solid transparent;
+  border-radius: var(--border-radius);
+  background-color: var(--color-elements);
+  cursor: pointer;
+  transition: all ease-in-out 250ms;
+}
+.btn[disabled] {
+  cursor: not-allowed;
+}
+.d-block {
+  display: block;
 }
