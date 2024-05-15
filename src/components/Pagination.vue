@@ -71,18 +71,7 @@
   .page:invalid {
     border: 1px solid red;
   }
-  .btn {
-    padding: 0.6rem 1rem;
-    color: var(--color-text);
-    border: 1px solid transparent;
-    border-radius: var(--border-radius);
-    background-color: var(--color-elements);
-    cursor: pointer;
-    transition: all ease-in-out 250ms;
-  }
-  .btn[disabled] {
-    cursor: not-allowed;
-  }
+
   .prev path,
   .next path {
     fill: var(--color-text);
