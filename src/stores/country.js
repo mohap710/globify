@@ -1,8 +1,9 @@
 import { defineStore } from 'pinia'
-
+import countries from './data.json'
 export const useCountryStore = defineStore({
   id: 'country',
   state: () => ({
+    countries,
     country: JSON.parse(localStorage.getItem('country')) || '',
   }),
   getters: {
