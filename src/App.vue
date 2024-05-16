@@ -1,13 +1,17 @@
 <script setup>
   import { RouterView } from "vue-router";
-  import mainnav from "@/components/MainNav.vue";
+  import MainNav from "@/components/MainNav.vue";
+  import MyFooter from "@/components/MyFooter.vue";
 </script>
 
 <template>
-  <mainnav />
+  <MainNav />
+
   <router-view :key="$route.fullPath" v-slot="{ Component }">
     <transition name="fade"> <component :is="Component" /> </transition>
   </router-view>
+
+  <MyFooter />
 </template>
 
 <style scoped>
