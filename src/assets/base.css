@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 /* semantic color variables for this project */
 :root {
   --color-background: hsl(0, 0%, 98%);
@@ -27,7 +28,7 @@
   padding: 0;
   position: relative;
   font-weight: normal;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Amiri", "Nunito Sans", sans-serif;
 }
 
 body {
@@ -35,7 +36,7 @@ body {
   background: var(--color-background);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
-  font-size: 14px;
+  font-size: 18px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
