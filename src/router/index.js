@@ -2,7 +2,7 @@ import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router
 import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
-  history: createWebHistory("/globify/"),
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
@@ -15,7 +15,12 @@ const router = createRouter({
       props: true,
       component: () => import('../views/CountryView.vue')
     }
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    // always scroll to top
+    return { top: 0, behavior: 'smooth', }
+  },
 })
+
 
 export default router
