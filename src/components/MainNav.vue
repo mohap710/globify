@@ -31,14 +31,20 @@
 
 <style scoped>
   header {
-    padding: 1rem min(3rem, 5vw);
+    position: sticky;
+    top: 0;
+    background-color: var(--color-elements);
+    box-shadow: 0px -3px 4px var(--color-text);
+    padding-inline: min(3rem, 5vw);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 0 0 40px 40px;
+    z-index: 11;
   }
   .logo__image {
     width: min(200px, 40vw);
-    aspect-ratio: 16 / 9 !important;
+    aspect-ratio: 16 / 7 !important;
     object-fit: contain;
     aspect-ratio: 1;
   }
