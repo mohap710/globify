@@ -1,17 +1,20 @@
 <script setup></script>
 
 <template>
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by
     <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
       >Frontend Mentor</a
     >. Coded by <a href="https://github.com/mohap710">Mohab Mohammed</a>.
-  </div>
+  </footer>
 </template>
 
 <style scoped>
   .attribution {
-    position: static;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: var(--color-elements);
     box-shadow: -1px 1px 2px var(--color-text);
     padding-block: 1rem;
