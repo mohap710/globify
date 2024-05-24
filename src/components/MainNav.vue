@@ -21,7 +21,9 @@
 <template>
   <header>
     <div class="logo">
-      <img src="@/assets/logo.png" alt="globify logo" class="logo__image" />
+      <router-link to="/">
+        <img src="@/assets/logo.png" alt="globify logo" class="logo__image" />
+      </router-link>
     </div>
     <button class="theme-switcher" @click="toggleTheme">
       <div v-if="theme == 'light'">
