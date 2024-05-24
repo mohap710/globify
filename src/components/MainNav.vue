@@ -6,11 +6,16 @@
   const html = document.querySelector("html");
 
   onMounted(() => {
+    if (localStorage["theme"]) {
+      theme.value = localStorage["theme"];
+      return html.setAttribute("data-theme", theme.value);
+    }
     theme.value = html.getAttribute("data-theme");
   });
   function toggleTheme() {
     theme.value == "light" ? (theme.value = "dark") : (theme.value = "light");
     html.setAttribute("data-theme", theme.value);
+    localStorage["theme"] = theme.value;
   }
 </script>
 <template>
