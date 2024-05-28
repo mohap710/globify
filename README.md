@@ -57,7 +57,6 @@ Users should be able to:
 - Mobile-first workflow
 - [VueJs](https://vuejs.org/) - JS library
 - [Pinia](https://pinia.vuejs.org/) - Pinia is a store library for Vue, it allows you to share a state across components/pages.
-- [Styled Components](https://styled-components.com/) - For styles
 
 ### Continued development
 
