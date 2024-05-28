@@ -6,7 +6,6 @@
 
 <template>
   <MainNav />
-
   <router-view :key="$route.fullPath" v-slot="{ Component }">
     <transition name="fade"> <component :is="Component" /> </transition>
   </router-view>
@@ -14,7 +13,10 @@
   <MyFooter />
 </template>
 
-<style scoped>
+<style>
+  #app {
+    min-height: 100dvh;
+  }
   .fade-enter-active {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
