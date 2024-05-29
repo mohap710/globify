@@ -1,4 +1,4 @@
-# our-world
+# Globify
 
 This is a solution to the [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca).
 
@@ -18,7 +18,7 @@ This is a solution to the [REST Countries API with color theme switcher challeng
 
 ## Promo
 
-<video style="max-width:500px;aspect-ratio:16 / 9" src="./public/Promo.mp4"></video>
+<img src="./public/Globify-GoogleChrome2024-05-2422-20-32-ezgif.com-video-to-gif-converter.gif" />
 
 ### The challenge
 
